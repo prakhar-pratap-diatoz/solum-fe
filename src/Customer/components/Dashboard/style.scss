@@ -1,0 +1,59 @@
+.dashboard-container {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .dashboard-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  
+    .stat-card {
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      text-align: center;
+  
+      h3 {
+        text-align: left;
+        font-size: 1rem;
+        margin-top: 0.3rem;
+        margin-bottom: 1.5rem;
+        color: #555;
+      }
+  
+      p {
+        text-align: left;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+  }
+  
+  .dashboard-charts {
+    display: flex;
+    gap: 2rem;
+  
+    .dough-chart,
+    .bar-chart {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: 380px;
+  
+    }
+  
+    .bar-chart {
+      width: 100%;
+  
+      canvas {
+        width: 100% !important;
+      }
+    }
+  }
+  

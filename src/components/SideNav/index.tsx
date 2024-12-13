@@ -1,9 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { AccountBalance, Person, Settings } from "@mui/icons-material";
 import "./style.scss";
 
 const SideNav = () => {
-  const sideMenu = ["Dashboard", "License Requests", "Licenses", "Users"];
+  const navigate = useNavigate();
+  const sideMenu = [
+    { menuName: "Dashboard", url: "/dashboard" },
+    { menuName: "Dashboard", url: "/dashboard" },
+    { menuName: "Licenses", url: "/licenses" },
+    { menuName: "Users", url: "/users" },
+    { menuName: "UserDashboard", url: "/user-dashboard" },
+  ];
   return (
     <div id="side_nav_container">
       <div className="company-icon">
@@ -13,12 +21,12 @@ const SideNav = () => {
           alt="company logo"
         />
       </div>
-      {sideMenu?.map((menu: string) => (
-        <div className="menu-icon-card">
+      {sideMenu?.map(({menuName, url}: {menuName : string , url : string}) => (
+        <div className="menu-icon-card" onClick={()=> navigate(url)}>
           <div className="icon">
             <AccountBalance />
           </div>
-          <div className="menu-name">{menu}</div>
+          <div className="menu-name">{menuName}</div>
         </div>
       ))}
     </div>
