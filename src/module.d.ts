@@ -7,3 +7,5 @@ declare module "react-helmet";
 declare module "material-react-table";
 declare module "react-toastify";
 declare module "@mui/styles";
+declare module "react-chartjs-2";
+declare module "chart.js";

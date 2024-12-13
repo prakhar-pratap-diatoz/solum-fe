@@ -7,7 +7,7 @@ import "./style.scss";
 const TopNav = () => {
   const [search, setSearch] = useState("");
   // const [viewType, setViewType] = useState("solum-view");
-  const [viewType, setViewType] = useState(() => {
+  const [viewType, setViewType] = useState<string>(() => {
     return localStorage.getItem("viewType") || "solum-view";
   });
 
@@ -37,6 +37,7 @@ const TopNav = () => {
             title="Solu-M View"
             onClick={() => setViewType("solum-view")}
           />
+          <Avatar>{viewType === "solum-view" ? "S" : "C"}</Avatar>
           <Buttons
             title="Customer View"
             variant="outlined"

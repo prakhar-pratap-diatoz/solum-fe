@@ -23,7 +23,7 @@ ChartJS.register(
   BarElement
 );
 
-const CustomerDashboard: React.FC = () => {
+const CustomerDashboard = () => {
   const doughnutData = {
     datasets: [
       {
@@ -87,7 +87,8 @@ const CustomerDashboard: React.FC = () => {
     },
   };
 
-  const barOptions: ChartOptions<"bar"> = {
+  const barOptions: any = {
+    // const barOptions: ChartOptions<"bar"> = {
     responsive: true,
     plugins: {
       legend: {
@@ -102,53 +103,50 @@ const CustomerDashboard: React.FC = () => {
       x: {
         stacked: false,
         grid: {
-          display: false, 
+          display: false,
         },
       },
       y: {
         beginAtZero: true,
-        grid: {
-        },
+        grid: {},
       },
     },
   };
 
-
-  
   return (
     <MainContainer>
-        <div className="dashboard-container">
-      <Header heading="Dashboard"/>
-      <div className="dashboard-stats">
-        <div className="stat-card">
-          <h3>Total Requests</h3>
-          <p>10</p>
-        </div>
-        <div className="stat-card">
-          <h3>Pending Requests</h3>
-          <p>1</p>
-        </div>
-        <div className="stat-card">
-          <h3>Keys Pending Allocation</h3>
-          <p>2</p>
-        </div>
-        <div className="stat-card">
-          <h3>Keys Expiring in 60 Days</h3>
-          <p>6</p>
-        </div>
-      </div>
-
-      <div className="dashboard-charts">
-        <div className="dough-chart">
-          <h3>Expiring Licence</h3>
-          <Doughnut data={doughnutData} options={doughOptions} />
+      <div className="dashboard-container">
+        <Header heading="Dashboard" />
+        <div className="dashboard-stats">
+          <div className="stat-card">
+            <h3>Total Requests</h3>
+            <p>10</p>
+          </div>
+          <div className="stat-card">
+            <h3>Pending Requests</h3>
+            <p>1</p>
+          </div>
+          <div className="stat-card">
+            <h3>Keys Pending Allocation</h3>
+            <p>2</p>
+          </div>
+          <div className="stat-card">
+            <h3>Keys Expiring in 60 Days</h3>
+            <p>6</p>
+          </div>
         </div>
 
-        <div className="bar-chart">
-          <Bar data={barData} options={barOptions} />
+        <div className="dashboard-charts">
+          <div className="dough-chart">
+            <h3>Expiring Licence</h3>
+            <Doughnut data={doughnutData} options={doughOptions} />
+          </div>
+
+          <div className="bar-chart">
+            <Bar data={barData} options={barOptions} />
+          </div>
         </div>
       </div>
-    </div>
     </MainContainer>
   );
 };
