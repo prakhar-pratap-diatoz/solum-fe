@@ -1,0 +1,17 @@
+#e2e_design_infinite_scroll {
+  width: 100%;
+  height: calc(100vh - 280px);
+  overflow: auto;
+  padding: 0 2px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  .scroll-loader {
+    display: flex;
+    justify-content: center;
+    margin: 12px auto;
+  }
+}
+#e2e_design_infinite_scroll::-webkit-scrollbar {
+  display: none;
+}

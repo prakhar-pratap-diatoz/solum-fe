@@ -1,0 +1,21 @@
+.align-items-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  @extend .align-items-center;
+
+  .heading {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-700);
+    font-family: var(--font-family);
+    display: flex;
+    align-items: center;
+    .label {
+      margin-left: 13px;
+    }
+  }
+}

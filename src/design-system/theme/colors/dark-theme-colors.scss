@@ -1,0 +1,530 @@
+[data-bs-theme="dark"] {
+  --color-primary: #de373a;
+  --color-primary-light: #ff6d65;
+  --color-primary-dark: #a50013;
+  --color-secondary: #0080a5;
+  --color-secondary-light: #53afd7;
+  --color-secondary-dark: #005476;
+  --color-link: #1890ff;
+  --color-success: #42a715;
+  --color-warning: #f89206;
+  --color-error: #cc090d;
+  --color-white: #fff;
+  --color-transparent: transparent;
+  --color-white-rgb: 0, 0, 0;
+  --color-black-rgb: 255, 255, 255;
+  --color-nav-bg: 51, 51, 51;
+  --color-nav-bg-opacity: 0.8;
+  --color-white-black: #fff;
+
+  //popover colors
+  --color-recruitment-bg: rgba(9, 67, 98, 0.6);
+  --color-timetracker-bg: rgba(83, 16, 38, 0.6);
+  --color-helpdesk-bg: rgba(118, 64, 41, 0.6);
+  --color-assessment-bg: rgba(56, 20, 110, 0.6);
+  --color-project-bg: rgba(88, 55, 18, 0.6);
+  --color-payroll-bg: rgba(16, 67, 68, 0.6);
+  --color-hr-bg: rgba(15, 61, 61, 0.6);
+  --color-user-bg: rgba(25, 66, 41, 0.6);
+  --color-accounts-bg: rgba(31, 70, 100, 0.6);
+  --color-offers-bg: rgba(54, 12, 82, 1);
+  --color-attendance-bg: rgba(28, 55, 0, 0.6);
+  --color-performance-bg: rgba(31, 78, 130, 0.6);
+
+  // Colors hue
+  --color-primary-300: #ccc2b7;
+  --color-primary-400: #ffd7dc;
+  --color-primary-500: #ea5c63;
+  --color-primary-600: #de373a;
+  --color-primary-700: #f36f79;
+  --color-primary-800: #93051d;
+  --color-secondary-400: #cceded;
+  --color-secondary-500: #399fb7;
+  --color-secondary-600: #007599;
+  --color-secondary-700: #005a7c;
+  --color-secondary-800: #014a60;
+
+  --color-purple-100: #83559d26;
+  --color-purple-400: #efe3fc;
+  --color-purple-500: #a582bc;
+  --color-purple-600: #ae8ac2;
+  --color-purple-700: #65427a;
+  --color-purple-800: #4e2c66;
+  --color-purple-900: #423a49;
+  --color-purple-1000: #312f36;
+
+  --color-green-100: #476a6a;
+  --color-green-200: #2d382a;
+  --color-green-300: #334e29;
+  --color-green-400: #dff3f1;
+  --color-green-500: #5bbcb7;
+  --color-green-600: #7cdbd9;
+  --color-green-700: #7cdbd9;
+  --color-green-800: #0b5b57;
+
+  --color-blue-400: #a7a7fc;
+  --color-blue-500: #8383ed;
+  --color-blue-600: #5e5edf;
+  --color-blue-700: #2d2dad;
+  --color-blue-800: #1c1c93;
+  --color-blue-900: #1c212e;
+
+  --color-orange-300: #7f5b4d;
+  --color-orange-400: #f9bcaa;
+  --color-orange-500: #fca586;
+  --color-orange-600: #f68455;
+  --color-orange-700: #f3a17f;
+  --color-orange-800: #a53d21;
+
+  --color-elephant-300: #4d566c;
+  --color-elephant-400: #a5afbf;
+  --color-elephant-500: #7887a8;
+  --color-elephant-600: #9fb4e8;
+  --color-elephant-700: #293963;
+  --color-elephant-800: #1b2d4c;
+
+  --color-indigo-300: #6a5180;
+  --color-indigo-400: #c7a9ed;
+  --color-indigo-500: #ac76dd;
+  --color-indigo-600: #9b53d1;
+  --color-indigo-700: #7127a8;
+  --color-indigo-800: #4e1787;
+
+  --color-rich-gold-200: #ff9a371a;
+  --color-rich-gold-400: #ffc28f;
+  --color-rich-gold-500: #fca556;
+  --color-rich-gold-600: #e58a1f;
+  --color-rich-gold-700: #c96e14;
+  --color-rich-gold-800: #a55002;
+
+  --color-navy-green-400: #9fbc8b;
+  --color-navy-green-500: #85aa6d;
+  --color-navy-green-600: #6a994e;
+  --color-navy-green-700: #467229;
+  --color-navy-green-800: #2b560f;
+
+  --color-customization-green-100: #5abe00;
+
+  --color-customization-gold-100: #be9800;
+
+  --color-customization-red-100: #be0000;
+
+  // Background
+  --color-disable-background: #f5f5f5;
+  --color-body-bg-white: #2a2b2d;
+  --color-body-bg: #1e1f21;
+  --color-card-selected-background: #505050;
+
+  // Box Shadow
+  --color-active-button-shadow: 0px 2px 8px #3232470f;
+  --box-card-shadow: 0px 3px 6px #0000001a;
+  --box-primary-shadow: 0px 3px 8px #0000000f;
+
+  // Opacity
+  --color-purple-600-01: #83559d1a;
+  --color-primary-700-1: #f36f791a;
+  --color-green-700-01: #16807e1a;
+
+  // Font
+  --color-ternary-text: #999999;
+  --color-primary-text: #fff;
+  --color-workspace-primary-text: #cfcfcf;
+  --color-secondary-text: #dddddd;
+  --color-quarterly-text: #fff;
+  --color-secondary-grey: #b7b7b7;
+  --color-secondary-grey-dark: #dddddd;
+  --color-secondary-blue-light-1: #3d70b2;
+  --color-secondary-blue-light-2: #335599;
+  --color-secondary-blue-light-3: #3d70b2;
+  --color-secondary-blue-dark-1: #0080a5;
+  --color-disable-text: #fff;
+  --color-disable-button-text: #bcbcbc;
+  --color-disable-text-button: #bbbbbb;
+  --color-border: #5a5a5c;
+  --color-divider: #fff;
+  --color-table-header: #323232;
+
+  --color-bg-card: #2a2b2d;
+  --color-bg-card-with-img: #2a2b2d;
+  --color-bg-card-without-img: #2a2b2d;
+  --color-border-card: #424244;
+  --color-disable-border-color: #e7e7e7;
+  --color-primary-border: #2d323a;
+  --color-cancel-button-color: #666666;
+  --color-button-option-text: #ffffff;
+  --color-card-divider: #6c6c6c;
+
+  // Navbar
+  --navbar-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  --navbar-bg-color: #2e2e30;
+  --navbar-menu-color: #fff;
+  --navbar-menu-company-logo-color: #fff;
+  --navbar-logo-color: #fff;
+  --navbar-menu-bg-color: #505051;
+  --navbar-menu-list-container: #333333;
+  --navbar-menu-list-bg-container: #1b1b1b;
+  --scroll-bar-bg: #595959;
+
+  // Tooltip
+  --tool-tip-bg-color: #2a2b2d;
+  --tool-tip-text-color: #fff;
+
+  //
+  --color-muted: #666666;
+
+  // Side Navbar
+  --side-navbar-bg-color: #2e2e30;
+  --side-navbar-shadow: 2px 1px 8px #0000000d;
+  --side-navbar-menu-hover-selected-color: #7e7e7e;
+  --side-navbar-menu-more-icon-color: #cbcbcb;
+  --side-navbar-popover-bg-color: transparent
+    linear-gradient(95deg, #000000 0%, #2e2e30 100%) 0% 0% no-repeat padding-box;
+  --side-navbar-popover-box-shadow: unset;
+  --side-navbar-popover-border-color: var(--color-transparent);
+
+  // Text-field
+  --color--textfield-sub-heading: #a0a0a0;
+  --color-active-button-shadow: #999999;
+  --color-error-border-color: #ee4c4c;
+  --color-textfield-background-color: #2a2b2d;
+  --color-textfield-font-color: #ffffff;
+  --color-text-link: #53afd7;
+
+  //Input-adornment
+  --color-input-adornment-text: #fff;
+
+  // success
+  --success-border-color: #389f5b4d;
+  --color-open-border: #3aa2a033;
+  --color-suspended-border: #e58a1f33;
+  --color-closed-border: #cc090d33;
+  --color-unpublished-border: #9999994d;
+
+  //card
+  --color-selected-card-border: #1a80a5;
+  --card-background-secondary: #5e5e5e;
+
+  //job card
+  --color-jobcard-account: #dddddd;
+  --color-total-applicant: #ffffff;
+  --color-total-subheading: #a5a5a5;
+  --card-open-applicant-bg: #2a3739;
+  --card-open-applicant-border: #d7ecec33;
+  --card-closed-applicant-bg: #f5cdce1a;
+  --card-closed-applicant-border: #f5cdce;
+  --card-suspended-applicant-bg: #f5cdce1a;
+  --card-suspended-applicant-border: #fae8d21a;
+  --card-prospect-count-bg: #33bebb33;
+  --card-prospect-count-text: #43b8b6;
+  --card-menu-bg: ;
+  --card-menu-hover-bg: #262626;
+  --card-menu-hover-color: #fff;
+  --card-menu-color: #fff;
+  --card-hover-border-color: #0000001a;
+  --card-hover-box-shadow: 0px 3px 20px #262626;
+  --card-weak-color: #728a98;
+
+  //Tabs
+  --color-tabs-primary-heading: #bebebe;
+  --color-tab-active-ws: #ffffff;
+  --color-tab-inactive-ws: #a2a0a2;
+
+  //Button
+  --color-primary-button-text: #ffffff;
+
+  // Skeleton
+  --color-skeleton-bg: #2a2b2d;
+
+  // Filter
+  --color-filter-button-color: #ffffff;
+  --color-filter-button-bg-color: #2a2b2d;
+  --color-filter-button-border-color: #424244;
+
+  // Modal
+  --bg-modal: #1e1f21;
+  --color-modal-text: #262626;
+
+  //autocomplete dropdown
+  --color-autocomplete-bg: #1e1f21;
+
+  //drawer
+  --color-drawer-bg: #1e1f21;
+
+  //account card
+  --color-status-chip-border-active-color: #c3e2cd33;
+  --color-status-chip-border-inactive-color: #f365684d;
+  --color-status-inactive-text-color: #df3f42;
+  --color-sub-text: #dddddd;
+  --color-card-divider: #6c6c6c;
+  --color-view-jobs-text: #53afd7;
+
+  //full drawer
+  --color-bg-full-drawer-section-nav: #2e2e30;
+  //scollbar
+  --color-scrollbar-thumb: #696969;
+  --color-scrollbar-thumb-hover: #888888;
+  //text-editor
+  --color-format-text: #bebebe;
+
+  // chip bg-color
+  --color-orange-700-bg: #f3a17f12;
+  --color-green-600-bg: #3aa2a033;
+  --color-elephant-600-bg: #9fb4e833;
+  --color-bg-published: #73d1cf33;
+  --color-published: #73d1cf;
+  --color-bg-internal: #3d414d;
+  --color-internal: #899ccc;
+  --color-bg-draft: #cbcaca33;
+  --color-draft: #cbcaca;
+  --color-bg-suspended: #feaf8f33;
+  --color-suspended: #feaf8f;
+  --color-bg-closed: #ff6d6533;
+  --color-closed: #ff6d65;
+  --color-bg-rejected: #ff6d6533;
+  --color-rejected: #ff6d65;
+  --color-bg-pending: #fbb15b33;
+  --color-pending: #fbb15b;
+  --color-bg-approved: #73d1cf33;
+  --color-approved: #73d1cf;
+  --color-bg-default: #666666;
+  --color-bg-sendBack: #92929233;
+  --color-sendBack: #e0e0e0;
+  --color-bg-complete: #424840;
+  --color-complete: #9fbc8b;
+  --color-bg-default: #6c6c6c;
+  --color-default: #e0e0e0;
+
+  //cut-off-chip
+  --color-cutOff-chip: #758dcc;
+  --color-bg-cutOff-chip: #758dcc12;
+
+  // candidate-card
+  --candidate-card-border: #424244;
+  --candidate-icon-background: #e9e9e933;
+  --candidate-info-divider: #f3f1f133;
+
+  //location-map-card-border
+  --color-map-border-color: #cfc0c0;
+
+  // Empty Illustrations
+  --color-empty-illustration-text: #fff;
+
+  //Full-page-illustration
+  --color-illustration-message-text: #7d7d7d;
+
+  // round stepper colors
+  --color-selected: #53afd7;
+  --color-selected-bg: #53afd733;
+  --color-selected-border: #b7dbe5;
+  --color-round-default: #00e3e3;
+  --color-round-default-chip: #00e3e326;
+  --color-round-default-border: #214a4b;
+  --color-round-default-bg: #253739;
+
+  --color-round-rejected: #ff7070;
+  --color-round-rejected-chip: #ff707026;
+  --color-round-rejected-border: #623738;
+  --color-round-rejected-bg: #352d2f;
+
+  --color-round-hired: #66db32;
+  --color-round-hired-chip: #42a71533;
+  --color-round-hired-border: #334e29;
+  --color-round-hired-bg: #66db3226;
+  //general-toggle-button-color
+  --color-checked-button: #0080a5;
+  --color-unchecked-button: #6c6c6c;
+  --color-drawer-card-bg-color: #39393a;
+
+  //info-card
+  --color-bg-info-card: #2a2b2d;
+
+  //dropdown-icon-color
+  --color-dropdown-icon-color: #fff;
+  //additional-info-card
+  --color-card-border-color: #3e3a3a;
+  --color-body-bg-color: #2a2b2d;
+  --color-empty-field-bg-color: #2e484f;
+  --color-empty-field-border-color: #8dc0cf;
+  --color-drag-emapty-text-color: #565656;
+  --color-section-border-color: #2e484f;
+  --color-section-hover-border: #0093be;
+  --color-light-gray-sub-text-color: #999999;
+  --color-light-white-color: #343434;
+
+  //Toast-success
+  --success-color-toast-linear-bg: transparent
+    linear-gradient(91deg, #253f2d 0%, #2a2b2d 36%) 0% 0% no-repeat padding-box;
+  --success-toast-border-color: var(--color-transparent);
+  --success-toast-box-shadow: unset;
+  --success-toast-title-color: #389b5a;
+
+  //Toast-error
+  --error-color-toast-linear-bg: transparent
+    linear-gradient(91deg, rgb(71 36 36) 0%, #2a2b2d 36%) 0% 0% no-repeat
+    padding-box;
+  --error-toast-border-color: var(--color-transparent);
+  --error-toast-box-shadow: unset;
+  --error-toast-title-color: #ff5d5d;
+
+  //round-card
+  --color-bg-round-card: #0080a51a;
+  //Helper-info
+  --color-bg-error-helper-info: #ff6d6526;
+  --color-bg-helper-info: #54e1de1a;
+  --color-error-helper-info: #ff6d65;
+  --color-helper-info: #54e1de;
+  //edit-template
+  --color-light-gray-400: #a0a0a0;
+  --color-medium-gray-300: #e0e0e0;
+  --color-customization-blue-border: #2c3e50;
+  --color-customization-blue-bg: #fff;
+  --color-customization-blue-100: #294958;
+  --color-darkblue: #004266;
+
+  //custom-background
+  --color-bg-custom-background: #343434;
+  --box-custom-background-shadow: 0px 2px 8px #3232470f;
+  --color-border-custom-background: #343434;
+  --color-bg-light: 0, 0, 0;
+  //round-card-button
+  --color-bg-round-set-btn: #1e1f21;
+  --color-bg-round-set-btn-selected: #2a2b2d;
+  --color-secondary-opacity10: #0080a51a;
+
+  // Organizational Chart
+  --linear-gradient-org-chart: linear-gradient(112deg, #272727 0%, #00bfb3 180%)
+    0% 0% no-repeat padding-box;
+
+  --color-blue-light: #183d47;
+
+  //question-options
+  --color-selected-option: #50c81e;
+  --color-bg-selected-option: #2e3e2a;
+  --color-editor-pre-tag: #1f1f1f;
+  // Calender
+  --bg-color-calender-header: #323437;
+  --bg-color-calender-body: #1e1f21;
+
+  // Widget
+  --widget-bg-gradient: linear-gradient(
+      89deg,
+      #2a2b2d 0%,
+      #2a2b2d 28%,
+      #4d596e 100%
+    )
+    0% 0%;
+
+  // job-banner
+  --bg-color-banner: #4a3d2e;
+  --color-banner-text: #e0e0e0;
+
+  //task-comment
+  --color-comment-bg: #252628;
+  --color-comment-text: #ffffff;
+  --comment-and-activity-header-text: #a0a0a0;
+  --color-activity-btn-hover: #353538;
+  --filter-btn-color: #e0e0e0;
+  --comment-display-container-bg: #252628;
+  --comment-display-container-border: #424244;
+
+  //card main icon bg color
+  --color-card-primary-icon-bg: #535f5f;
+
+  //table-fixed-header-bg
+  --color-timetracking-table-header-bg: #000;
+  //board-view
+  --color-bg-board: #2e2f31;
+
+  //Table
+  --color-table-border: rgba(81, 81, 81, 1);
+
+  // Color for Background Image
+  --header-color-primary-text: #fff;
+  --header-color-secondary-text: #dddddd;
+  --header-color-active-breadcrumb: #0080a5;
+  --header-color-active-button: #0080a5;
+  --header-border-color: var(--color-primary-border);
+
+  //color-location card
+  --color-location-card-bg: #000;
+  --bg-leftbar: 42, 43, 45;
+  --box-shadow-header: 0px 3px 6px #00000029;
+
+  //messages
+  --bg-main-white: #2a2b2d;
+  --bg-leftbar: 44, 45, 47;
+  --bg-dark-bar: #393939;
+  --bg-dark-btn: 42, 43, 45;
+  --color-heading: #969696;
+  --bg-light-main: 42, 43, 45;
+  --box-shadow-left: 3px 3px 6px #0000004f;
+  --box-shadow-header: 0px 3px 6px #00000029;
+  --empty-json-heading-message: #ffffff;
+  --empty-json-sub-heading-message: #cccccc;
+  --stella-gradient-1: rgba(0, 206, 193, 0.28);
+  --stella-gradient-2: rgba(56, 81, 195, 0.28);
+  --heading-color-1: #ffffff;
+  --color-text-soft: #cccccc;
+  --color-bg-soft: #323233;
+  --color-bg-soft1: #263537;
+  --color-bg-soft2: #1a282e;
+  --color-bg-header: #373738;
+  --opacity: 0.3;
+  --color-tint: #000;
+
+  //color-timetracking-internal card
+  --color-timetracking-bg-inner-card: #1e1f21;
+  --color-assingee-chip-bg: #111;
+  --color-tabs-bg: #171718;
+  --color-popOver-card: #3d3d3d;
+
+  // Message color
+  --color-msg-bg: #343434;
+  --color-msg-header: #303030;
+  --bg-msg-header: #25252a;
+  --bg-msg-bdy: #1a191c;
+  --bg-msg-editor-bdy: #141319;
+  --bg-search-people: #414141;
+  --bg-msg-side-navbar: #1b1b1e;
+  --bg-msg-side-navbar-blur: 5px;
+  --bg-msg-side-navbar-opacity: 0.75;
+
+  --bg-count-box: #2d2d35;
+  --bg-selected-message: #25252a;
+
+  // poll colors
+  --color-progress: #10bbc0;
+  --color-bg-progress: #25252a;
+  --color-bg-poll-card: #1c1d22;
+  --bg-selected-ws: #374151;
+  --doc-dropdown-iconBg: rgb(177 177 177 / 20%);
+  --editor-bg-color: #060607;
+  --editor-border-color: #979797;
+
+  //warning
+  --warning-background-helper: #f9be33;
+  --warning-background-color: #4b422c;
+
+  //workspace
+  --workspace-side-navbar: #22272e;
+  --workspace-bg: rgb(20, 23, 28);
+  --table-cell-border-right: #999;
+
+  //sla-card-bg
+  --color-bg-on-track: #2f3630;
+  --color-bg-on-track-escalated: #303133;
+  --color-bg-breached: #352e30;
+  --color-bg-breached-escalated: #332a2d;
+  --color-bg-target-met: #2e3436;
+  --color-bg-sla-paused: #2f3038;
+
+  //higlight modal desc bg;
+  --color-bg-highlight: #984545;
+
+  // projects alert types
+  --info-bg: #203380;
+  --warning-bg: #805d20;
+  --error-bg: #802020;
+  --success-bg: #208020;
+}

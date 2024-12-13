@@ -1,0 +1,170 @@
+.e2e-design-button {
+  .filter-button-design {
+    min-width: 98px;
+    height: 36px;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-400);
+    text-transform: inherit;
+    pointer-events: inherit;
+    box-shadow: var(--color-active-button-shadow);
+    padding: 8px 18px;
+    color: var(--color-filter-button-color);
+    border-radius: var(--border-radius-sm);
+    background-color: var(--color-filter-button-bg-color);
+    border: 1px solid var(--color-filter-button-border-color);
+    cursor: pointer;
+  }
+  .button {
+    min-width: 98px;
+    height: 40px;
+    text-transform: inherit;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-400);
+    pointer-events: inherit;
+    padding: 12px 20px;
+  }
+
+  .primary-contained {
+    @extend .button;
+    color: var(--color-primary-button-text);
+    box-shadow: var(--color--active-button-shadow);
+    background: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    border-radius: var(--border-radius-sm);
+    &:hover {
+      background-color: var(--color-secondary-dark);
+      border: 1px solid var(--color-secondary-dark);
+    }
+    &:disabled {
+      color: var(--color-disable-text-button);
+      border: 1px solid var(--color-disable-border-color);
+      background-color: var(--color-disable-background);
+      cursor: not-allowed;
+    }
+  }
+  .primary-cancel,
+  .danger-cancel {
+    @extend .button;
+    color: var(--color-cancel-button-color);
+    background: var(--color-primary-button-text);
+    border: 1px solid var(--color-cancel-button-color);
+    box-shadow: var(--color--active-button-shadow);
+    border-radius: var(--border-radius-sm);
+    &:hover {
+      background-color: var(--color-primary-button-text);
+    }
+    &:disabled {
+      color: var(--color-disable-text-button);
+      border: 1px solid var(--color-disable-border-color);
+      background-color: var(--color-disable-background);
+      cursor: not-allowed;
+    }
+  }
+
+  .danger-contained {
+    @extend .button;
+    color: var(--color-primary-button-text);
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    box-shadow: var(--color--active-button-shadow);
+    border-radius: var(--border-radius-sm);
+    &:hover {
+      background-color: var(--color-primary-dark);
+      border: 1px solid var(--color-primary-dark);
+    }
+    &:disabled {
+      color: var(--color-disable-text-button);
+      border: 1px solid var(--color-disable-border-color);
+      background-color: var(--color-disable-background);
+      cursor: not-allowed;
+    }
+  }
+  .primary-text {
+    @extend .button;
+    padding: 6px 8px;
+    color: var(--color-secondary);
+    &:hover {
+      color: var(--color-secondary-dark);
+      background-color: var(--color-transparent);
+    }
+    &:disabled {
+      color: var(--color-disable-text-button) !important;
+      cursor: not-allowed !important;
+    }
+  }
+  .danger-text {
+    @extend .button;
+    color: var(--color-primary);
+    padding: 6px 8px;
+
+    &:hover {
+      color: var(--color-primary-dark);
+      background-color: var(--color-transparent);
+    }
+    &:disabled {
+      color: var(--color-disable-text-button);
+      cursor: not-allowed;
+    }
+  }
+
+  .primary-link {
+    @extend .button;
+    color: var(--color-secondary);
+    text-decoration: underline;
+    background-color: var(--color-transparent);
+
+    &:hover {
+      color: var(--color-secondary-dark);
+    }
+    &:disabled {
+      color: var(--color-disable-text-button);
+      cursor: not-allowed;
+    }
+  }
+  .danger-link {
+    @extend .button;
+    color: var(--color-primary);
+    text-decoration: underline;
+    background-color: var(--color-transparent);
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+    &:disabled {
+      color: var(--color-disable-text-button);
+      cursor: not-allowed;
+    }
+  }
+  .primary-outlined {
+    @extend .button;
+    border: 1px solid var(--color-secondary);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-secondary);
+    &:hover {
+      border: 1px solid var(--color-secondary-dark);
+      color: var(--color-secondary-dark);
+    }
+    &:disabled {
+      background-color: var(--color-disable-text);
+      color: var(--color-disable-button-text);
+      border: 1px solid var(--color-disable-button-text);
+      cursor: not-allowed;
+    }
+  }
+
+  .danger-outlined {
+    @extend .button;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--border-radius-sm);
+    &:hover {
+      border: 1px solid var(--color-primary-dark);
+      color: var(--color-primary-dark);
+    }
+    &:disabled {
+      background-color: var(--color-disable-text);
+      color: var(--color-disable-button-text);
+      border: 1px solid var(--color-disable-button-text);
+      cursor: not-allowed;
+    }
+  }
+}

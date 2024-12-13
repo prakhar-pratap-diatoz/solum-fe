@@ -1,0 +1,39 @@
+#custom-icon-picker {
+  .icon-box {
+    border: 1px solid var(--color-primary-border);
+    padding: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .icon-box-container {
+    .icon-box {
+      width: 36px;
+    }
+    .selected-icon-box {
+      width: 36px;
+    }
+  }
+  .icon-box-wrapper {
+    @extend .icon-box;
+    display: inline-flex;
+    border: 1px solid var(--color-filter-button-border-color);
+    padding: 4px 7px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .disabled-iconbox-wrapper {
+    @extend .icon-box-wrapper;
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
+  .selected-iconbox-wrapper {
+    @extend .icon-box-wrapper;
+    border: 1.5px solid var(--color-secondary);
+  }
+  .selected-icon-box {
+    @extend .icon-box;
+    border: 1px solid var(--color-selected);
+    background-color: var(--color-selected-border);
+  }
+}

@@ -1,0 +1,9 @@
+export { default as ApprovedIcon } from "./ApprovedIcon";
+export { default as ClosedIcon } from "./ClosedIcon";
+export { default as InternalIcon } from "./InternalIcon";
+export { default as DraftIcon } from "./DraftIcon";
+export { default as PendingIcon } from "./PendingIcon";
+export { default as PublishedIcon } from "./PublishedIcon";
+export { default as RejectedIcon } from "./RejectedIcon";
+export { default as SendBackIcon } from "./SendBackIcon";
+export { default as SuspendedIcon } from "./ApprovedIcon";

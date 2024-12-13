@@ -1,0 +1,8 @@
+#e2e_advance_custom_material_table {
+  .custom-table-wrapper {
+    .MuiPaper-root {
+      border-radius: 8px !important;
+      background-color: var(--color-bg-card);
+    }
+  }
+}

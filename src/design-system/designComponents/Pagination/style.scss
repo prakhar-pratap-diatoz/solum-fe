@@ -1,0 +1,40 @@
+.pagination-component-parent-wrapper {
+  color: var(--color-primary-text);
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  font-family: var(--font-family) !important;
+  font-size: var(--font-size-regular) !important;
+  font-weight: var(--font-weight-400) !important;
+  #pagination-size-select {
+    min-width: 110px;
+    width: fit-content;
+    padding: 6px 3px;
+    margin-right: 10px;
+
+    // .MuiSvgIcon-root{
+    //     right : 0px !important;
+    //     margin-right: 3px;
+    //   }
+  }
+  .MuiInputBase-root {
+    .MuiOutlinedInput-notchedOutline {
+      border: 1px solid rgba(0, 0, 0, 0.23) !important;
+    }
+    &:hover {
+      .MuiOutlinedInput-notchedOutline {
+        border: 1px solid rgba(0, 0, 0, 0.23) !important;
+      }
+    }
+  }
+
+  .MuiPaginationItem-root {
+    min-width: 35px !important;
+    height: 35px !important;
+  }
+}
+
+.pagination-size-dropdown-popper {
+  background-color: var(--color-body-bg) !important;
+  color: var(--color-primary-text);
+}

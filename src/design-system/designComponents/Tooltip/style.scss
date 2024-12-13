@@ -1,0 +1,9 @@
+#e2e_design_tool_tip_custom {
+  .MuiTooltip-tooltip {
+    background-color: var(--tool-tip-bg-color) !important;
+    color: var(--tool-tip-text-color) !important;
+  }
+  .MuiTooltip-arrow {
+    color: var(--tool-tip-bg-color) !important;
+  }
+}

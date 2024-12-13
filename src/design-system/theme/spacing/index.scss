@@ -1,0 +1,39 @@
+:root {
+  // vertical paddings
+  --padding-lg: 24px; // containers
+  --padding-md: 16px; // small containers and buttons
+  --padding-sm: 12px; // Form controls and items
+  --padding-xs: 8px; // small items
+  --padding-xss: 4px; // more small
+
+  // vertical margins
+  --margin-lg: 24px; // containers
+  --margin-md: 16px; // small containers and buttons
+  --margin-sm: 12px; // Form controls and items
+  --margin-xs: 8px; // small items
+  --margin-xss: 4px; // more small
+
+  // height rules
+  --height-base: 32px;
+  --height-lg: 40px;
+  --height-sm: 24px;
+
+  // Media queries breakpoints
+  // --screen-xs and --screen-xs-min is not used in Grid
+  // smallest break point is --screen-md
+  --screen-xs: 480px;
+  // 👇 Small screen / tablet
+  --screen-sm: 576px;
+
+  // Medium screen / desktop
+  --screen-md: 768px;
+
+  // Large screen / wide desktop
+  --screen-lg: 992px;
+
+  // Extra large screen / full hd
+  --screen-xl: 1200px;
+
+  // Extra extra large screen / large desktop
+  --screen-xxl: 1600px;
+}

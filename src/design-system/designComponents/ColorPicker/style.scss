@@ -1,0 +1,44 @@
+#custom-color-picker {
+  .color-box {
+    position: relative;
+    border: 1px solid transparent;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+  }
+  .color-box-wrapper {
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: var(--color-autocomplete-bg);
+    border: 1px solid var(--color-filter-button-border-color);
+    border-radius: var(--border-radius-sm);
+    padding: 4px 7px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .disabled-color-box-wrapper {
+    @extend .color-box-wrapper;
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
+  .selected-color-box-wrapper {
+    @extend .color-box-wrapper;
+    border: 1.5px solid var(--color-secondary);
+  }
+  .checkmark {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 12px;
+    width: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+}

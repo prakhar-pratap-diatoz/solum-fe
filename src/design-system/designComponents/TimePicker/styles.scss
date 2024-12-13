@@ -1,0 +1,76 @@
+.custom-timepicker {
+  height: 38px !important;
+  border-radius: 5px !important;
+  padding: 4px 11px !important;
+  font-weight: var(--font-weight-400);
+  font-family: var(--font-family);
+  font-size: var(--font-size-regular);
+  color: var(--color-textfield-font-color);
+  -webkit-text-fill-color: var(--color-textfield-font-color);
+  background-color: var(--color-textfield-background-color) !important;
+  border-color: var(--color-filter-button-border-color) !important;
+  box-shadow: none !important;
+  
+  input {
+    color: var(--color-primary-text) !important;
+  }
+
+  &::placeholder {
+    color: var(--color-textfield-font-color) !important;
+    font-size: var(--font-size-regular) !important;
+    font-weight: var(--font-weight-100) !important;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  &:hover {
+    border: 1.5px solid var(--color-secondary) !important;
+  }
+  &:focus {
+    border: 1.5px solid var(--color-secondary) !important;
+  }
+}
+
+.ant-picker-status-error {
+  border: 1px solid var(--color-error) !important
+}
+.custom-timepicker-popup {
+  .ant-btn-primary {
+    background-color: var(--color-secondary) !important;
+    border-radius: 5px !important;
+    border-color: var(--color-secondary) !important;
+  }
+  .ant-picker-panel-container {
+    background-color: var(--color-bg-card) !important;
+    color: var(--color-primary-text) !important;
+  }
+
+  .ant-picker-header {
+    color: var(--color-primary-text) !important;
+  }
+  .ant-picker-content th {
+    color: var(--color-primary-text) !important;
+  }
+
+  .ant-picker-time-panel-cell-inner {
+    color: var(--color-primary-text) !important;
+  }
+
+  .ant-picker-time-panel-column
+    > li.ant-picker-time-panel-cell-selected
+    .ant-picker-time-panel-cell-inner {
+    background-color: var(--color-darkblue);
+  }
+  .ant-picker-time-panel-cell-selected {
+    .ant-picker-time-panel-cell-inner {
+      color:#fff;
+    }
+  }
+
+  .ant-picker-time-panel-column
+    > li.ant-picker-time-panel-cell
+    .ant-picker-time-panel-cell-inner:hover {
+    background-color: var(--color-background-hover);
+  }
+}

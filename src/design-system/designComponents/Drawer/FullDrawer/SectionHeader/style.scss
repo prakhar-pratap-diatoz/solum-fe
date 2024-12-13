@@ -1,0 +1,50 @@
+.full-drawer-mobile-header {
+  padding: 15px 10px;
+  .mobile-nav-section-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    .section-info {
+      display: flex;
+      align-items: center;
+      .section-title {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: bold;
+        color: var(--color-primary-text);
+        margin-bottom: 0px;
+        margin-left: 7px;
+      }
+    }
+  }
+  .full-drawer-nav-wrap {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    .side-nav-section-handler-wrap {
+      border-radius: 8px;
+      background: hsla(0, 0%, 49%, 0.22);
+      .icon-wrap {
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+    .full-drawer-step-name-display {
+      width: calc(100% - 56px);
+      border-radius: 8px;
+      background: hsla(0, 0%, 49%, 0.22);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      .display-name {
+        margin: 0 0 0 10px;
+        color: var(--color-primary-text);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+}

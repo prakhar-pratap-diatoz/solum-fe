@@ -1,0 +1,78 @@
+.no-data-found-web-view-container-design-system {
+  display: grid;
+  width: 100%;
+  place-content: center;
+  margin: auto;
+
+  .colored-box-container {
+    display: flex;
+    justify-content: center;
+    .colored-box {
+      background-color: #e0e0e0;
+      width: 220px;
+      height: 180px;
+      border-radius: 13px;
+    }
+  }
+
+  .title-text {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: var(--color-primary-text);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .description-text {
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-primary-text);
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+
+  .action-btn-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .MuiButton-root {
+      padding: 12px 20px;
+      min-width: 98px;
+      height: 40px;
+      text-transform: inherit;
+      font-family: SF Pro Display;
+      // background-color: #0080a5 !important;
+      // border: 1px solid #0080a5 !important;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 19px;
+      font-weight: 400;
+      // color: #fff !important;
+      box-shadow: none !important;
+
+      &:active,
+      &:hover {
+        box-shadow: none !important;
+      }
+    }
+
+    .primary-contained {
+      background-color: #0080a5 !important;
+      border: 1px solid #0080a5 !important;
+      color: #fff !important;
+    }
+
+    .primary-outlined {
+      border: 1px solid var(--color-secondary);
+      border-radius: var(--border-radius-sm);
+      color: var(--color-secondary);
+      &:hover {
+        border: 1px solid var(--color-secondary-dark);
+        color: var(--color-secondary-dark);
+      }
+    }
+  }
+}

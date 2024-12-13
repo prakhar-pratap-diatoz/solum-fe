@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <g id="Group_79967" data-name="Group 79967" transform="translate(-680 -326)">
+    <g id="Rectangle_31642" data-name="Rectangle 31642" transform="translate(680 326)" fill="#fff" stroke="#eee" stroke-width="1">
+      <rect width="46" height="46" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="45" height="45" rx="7.5" fill="none"/>
+    </g>
+    <g id="Group_79969" data-name="Group 79969">
+      <rect id="Rectangle_31643" data-name="Rectangle 31643" width="32" height="32" transform="translate(687 333)" fill="none"/>
+      <path id="Union_161" data-name="Union 161" d="M18006.992,14885.41c-2.629,0-3.99-1.335-3.99-3.9V14859.9c0-2.571,1.361-3.9,3.99-3.9h23.84c2.631,0,3.992,1.331,3.992,3.9v21.607c0,2.566-1.361,3.9-3.992,3.9Zm23.7-2.354a1.571,1.571,0,0,0,1.752-1.752v-2.616h-7.844v4.368Zm-7.459,0v-4.368h-9.631v4.368Zm-17.842-1.752a1.565,1.565,0,0,0,1.752,1.752h5.092v-4.368h-6.844Zm27.053-3.982v-4.255h-7.844v4.255Zm-9.211,0v-4.255h-9.631v4.255Zm-11,0v-4.255h-6.844v4.255Zm20.209-5.617v-4.255h-7.844v4.255Zm-9.211,0v-4.255h-9.631v4.255Zm-11,0v-4.255h-6.844v4.255Zm20.209-6v-5.612a1.561,1.561,0,0,0-1.752-1.738h-6.092v7.351Zm-9.211,0v-7.351h-9.631v7.351Zm-11,0v-7.351h-5.092a1.555,1.555,0,0,0-1.752,1.738v5.612Z" transform="translate(-17315.91 -14521.703)" fill="#1c1c1e"/>
+    </g>
+  </g>
+</svg>

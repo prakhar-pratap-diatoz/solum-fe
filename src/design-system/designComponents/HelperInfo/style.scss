@@ -1,0 +1,19 @@
+#custom-helper-info {
+  .helper-info-wrapper {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding: 7px;
+    border-radius: 7px;
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height-medium);
+  }
+  .info {
+    background-color: var(--color-bg-helper-info);
+    color: var(--color-helper-info);
+  }
+  .error {
+    background-color: var(--color-bg-error-helper-info);
+    color: var(--color-error-helper-info);
+  }
+}

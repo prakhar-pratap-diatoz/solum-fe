@@ -1,0 +1,11 @@
+#view-toggle {
+  .MuiToggleButtonGroup-root {
+    .MuiToggleButton-root {
+      background-color: var(--color-filter-button-bg-color);
+      border: 1px solid var(--color-filter-button-border-color);
+    }
+    .Mui-selected {
+      background-color: var(--color-selected-bg) !important;
+    }
+  }
+}

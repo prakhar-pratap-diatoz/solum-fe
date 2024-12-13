@@ -1,0 +1,36 @@
+.e2e_design_switch_with_Card {
+  .card-wrapper {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-primary-border);
+    border-radius: 8px;
+    padding: 16px;
+    .switch-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      width: 100%;
+      .title {
+        color: var(--color-primary-text);
+        font-size: var(--font-size-medium);
+        font-weight: var(--font-weight-700);
+        font-family: var(--font-family);
+      }
+      .desc {
+        color: var(--color-secondary-text);
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-300);
+        font-family: var(--font-family);
+        line-height: 19px;
+      }
+    }
+    @media (max-width: 576px) {
+      padding: 10px;
+      .switch-wrapper {
+        .title {
+          font-size: var(--font-size-regular) !important;
+          font-weight: var(--font-weight-500) !important;
+        }
+      }
+    }
+  }
+}

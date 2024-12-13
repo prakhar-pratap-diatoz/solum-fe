@@ -1,0 +1,33 @@
+$font-family: "SF Pro Display";
+#more-vertical-options {
+  .MuiPaper-root {
+    background-color: var(--color-body-bg) !important;
+    color: var(--color-primary-text) !important ;
+  }
+  #custom_menulist {
+    padding: 0;
+    border-radius: 4px;
+    background-color: var(--card-body-bg);
+    .MuiMenuItem-root {
+      color: var(--card-menu-color);
+      font-size: 14px;
+      font-family: $font-family;
+      svg,
+      img {
+        width: 18px;
+        margin-right: 6px;
+      }
+    }
+    .MuiButtonBase-root:first-child {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+    .MuiButtonBase-root:last-child {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+    .MuiMenu-list {
+      padding: 0px;
+    }
+  }
+}

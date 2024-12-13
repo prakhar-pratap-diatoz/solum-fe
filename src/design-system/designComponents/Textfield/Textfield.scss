@@ -1,0 +1,109 @@
+#e2e_design_textfield {
+  font-family: var(--font-family);
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  ::-webkit-scrollbar {
+    width: 5px !important;
+  }
+  .MuiInputBase-multiline {
+    padding: 8px;
+  }
+
+  input:-webkit-autofill {
+    -webkit-background-clip: text;
+  }
+  .text-field-wrapper {
+    margin-top: 12px;
+  }
+
+  .text-field-heading {
+    color: var(--color-primary-text);
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-400);
+    .field-required-icon {
+      color: var(--color-error);
+      margin-left: 5px;
+    }
+  }
+  .text-field-helper-error-text {
+    color: var(--color-error-border-color);
+    font-size: var(--font-size-small);
+    .text-field-helper-text-icon {
+      height: 16px;
+    }
+  }
+  .text-field-helper-text {
+    font-size: var(--font-size-small);
+    color: var(--color-primary-text);
+    font-weight: var(--font-weight-100);
+  }
+  .text-field-sub-heading {
+    color: var(--color-active-button-shadow);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-400);
+    margin-bottom: 10px;
+  }
+
+  .MuiOutlinedInput-root {
+    background-color: var(--color-textfield-background-color);
+    .MuiInputAdornment-root {
+      p {
+        color: var(--color-input-adornment-text);
+        font-family: var(--font-family);
+        font-size: var(--font-size-regular);
+        font-weight: var(--font-weight-100);
+      }
+    }
+  }
+  .MuiOutlinedInput-input {
+    border-radius: 5px;
+    padding: 4px 11px;
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-family);
+    font-size: var(--font-size-regular);
+    color: var(--color-textfield-font-color);
+    -webkit-text-fill-color: var(--color-textfield-font-color);
+    &::placeholder {
+      color: var(--color-textfield-font-color);
+      font-size: var(--font-size-regular);
+      font-weight: var(--font-weight-100);
+    }
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border: 1px solid var(--color-filter-button-border-color);
+    border-radius: var(--border-radius-sm);
+  }
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border: 1px solid var(--color-cancel-button-color);
+  }
+  .Mui-error .MuiOutlinedInput-notchedOutline {
+    border: 1.5px solid var(--color-error-border-color) !important;
+  }
+  .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border: 1.5px solid var(--color-secondary) !important;
+  }
+
+  & legend {
+    display: none;
+  }
+  & fieldset {
+    top: 0;
+  }
+
+  .warning-label-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    .title {
+      font: normal normal 400 13px/15px SF Pro Display;
+      color: #e58a1f;
+    }
+  }
+}

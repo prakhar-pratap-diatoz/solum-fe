@@ -1,0 +1,45 @@
+.tabs {
+  width: 100%;
+  min-height: 32px !important;
+  margin-top: 7px;
+
+  .tab {
+    font-size: var(--font-size-regular);
+    font-family: var(--font-family);
+    text-transform: none;
+    min-height: 20px;
+    min-width: 60px;
+    padding: 12px 26px;
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  .tabSelected {
+    font-weight: var(--font-weight-500);
+    &:first-child {
+      border-bottom-left-radius: 0px;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 0px;
+    }
+  }
+
+  .indicator {
+    background-color: var(--color-primary);
+    height: 2px;
+  }
+
+  @media (max-width: 768px) {
+    .tab {
+      padding: 10px;
+    }
+  }
+}

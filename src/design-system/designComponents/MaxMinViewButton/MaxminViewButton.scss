@@ -1,0 +1,25 @@
+.min-max-container {
+  cursor: pointer;
+}
+
+.minMax-popover-style {
+  .ant-popover-content {
+    border: 1px solid var(--color-border-card);
+    border-radius: 5px;
+  }
+  .ant-popover-arrow-content {
+    --antd-arrow-background-color: var(--color-bg-card);
+    border-radius: 5px;
+  }
+  .ant-popover-inner {
+    background-color: var(--color-bg-card);
+    border-radius: 5px;
+    .ant-popover-inner-content {
+      background-color: var(--color-bg-card);
+      padding: 7px;
+      border-radius: 5px;
+      color: var(--color-primary-text);
+      max-width: 350px;
+    }
+  }
+}

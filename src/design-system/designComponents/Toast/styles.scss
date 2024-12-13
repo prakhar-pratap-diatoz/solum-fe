@@ -1,0 +1,132 @@
+@import "../../theme/typography.scss";
+
+#e2e_design_toast {
+  .snack-bar-wrapper {
+    width: 500px;
+    .divider {
+      border-radius: 21px;
+      width: 4px;
+      position: absolute;
+      left: 0px;
+      height: calc(100% - 8px);
+      top: 4px;
+    }
+    .warning {
+      background-color: #e58a1f;
+    }
+    .success {
+      background-color: #6a994e;
+    }
+    .error {
+      background-color: #de373a;
+    }
+    .info {
+      background-color: #009ccc;
+    }
+    .snack-bar-alert-wrapper {
+      box-shadow: 0px 3px 8px #0000001a;
+      border-radius: 5px;
+      position: relative;
+      .title {
+        @include heading5;
+        color: #262626;
+      }
+      .desc {
+        @include subtitle6;
+        color: #666666;
+      }
+    }
+    .warning-alert {
+      border: 1px solid #e58a1f33;
+      background: #fdf5ee 0% 0% no-repeat padding-box;
+    }
+    .success-alert {
+      background: #f4f8f2 0% 0% no-repeat padding-box;
+      border: 1px solid #d8e6d1;
+    }
+    .error-alert {
+      border: 1px solid #de373a33;
+      background: #fcedee 0% 0% no-repeat padding-box;
+    }
+    .info-alert {
+      border: 1px solid #009ccc33;
+      background: #ebfaff 0% 0% no-repeat padding-box;
+    }
+  }
+}
+
+.Toastify__toast-container {
+  max-width: 992px;
+  width: fit-content;
+}
+
+.toastify-e2e-design {
+  background: var(--success-color-toast-linear-bg) !important;
+  border: 1px solid var(--success-toast-border-color);
+  border-radius: 10px !important;
+  min-width: 360px;
+  padding: 4px 8px !important;
+  box-shadow: var(--success-toast-box-shadow) !important;
+  opacity: 1;
+
+  .toast-container-field-wrapper {
+    .toast-container-field-box {
+      display: flex;
+      align-items: center;
+
+      .toast-details-box-container {
+        padding-left: 12px;
+        .title {
+          font: normal normal 500 16px/21px SF Pro Display;
+          color: var(--success-toast-title-color);
+        }
+        .desc {
+          font: normal normal 400 12px/18px SF Pro Display;
+          letter-spacing: 0px;
+          color: var(--color-primary-text);
+          margin-top: 4px;
+          opacity: 0.9;
+          flex-grow: 1;
+          padding-bottom: 6px;
+        }
+      }
+    }
+  }
+  .copy-field{
+    border: 1px solid var(--color-primary-border);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+
+    &:hover{
+      border: 1px solid var(--color-primary-text);
+      svg{
+        fill: var(--color-primary-text);
+      }
+    }
+  }
+
+  .desc-container {
+    display: flex;
+    align-items: center;
+    gap: 4px; 
+  }
+  .close-icon{
+    cursor: pointer;
+  }
+}
+
+.error-toast-field-wrapper {
+  background: var(--error-color-toast-linear-bg) !important;
+  border: 1px solid var(--error-toast-border-color);
+  box-shadow: var(--error-toast-box-shadow) !important;
+  .title {
+    color: var(--error-toast-title-color) !important;
+  }
+}

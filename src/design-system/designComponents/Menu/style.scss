@@ -1,0 +1,7 @@
+#custom_menu_item {
+  gap: 5px;
+  &:hover {
+    color: var(--card-menu-hover-color) !important;
+    background-color: var(--card-menu-hover-bg) !important;
+  }
+}

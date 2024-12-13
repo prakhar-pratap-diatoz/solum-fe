@@ -1,0 +1,25 @@
+@import "../../../theme/typography.scss";
+#custom-header {
+  .custom-h1 {
+    @include heading1;
+  }
+  .custom-h4 {
+    @include heading4;
+  }
+  .custom-h5 {
+    @include heading5;
+  }
+  .custom-h6 {
+    @include heading6;
+  }
+  .custom-h7 {
+    @include heading7;
+  }
+  .custom-h8 {
+    @include subtitle7;
+  }
+
+  .custom-h9 {
+    @include heading9;
+  }
+}

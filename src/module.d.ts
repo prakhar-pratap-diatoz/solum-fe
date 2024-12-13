@@ -1,0 +1,9 @@
+declare module "react-copy-to-clipboard";
+declare module "react-custom-scrollbars-2";
+declare module "react-beautiful-dnd";
+declare module "react-lottie-player";
+declare module "react-infinite-scroller";
+declare module "react-helmet";
+declare module "material-react-table";
+declare module "react-toastify";
+declare module "@mui/styles";

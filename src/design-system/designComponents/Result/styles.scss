@@ -1,0 +1,156 @@
+#e2e_design_empty_result {
+  display: flex;
+  .empty-wrapper {
+    margin: 10px auto;
+    position: relative;
+    .empty-field-wrapper {
+      position: absolute;
+      top: -76px;
+      left: -51px;
+    }
+    .empty-field-wrapper-dog {
+      top: -130px;
+      left: -154px;
+    }
+    .empty-field-details-desc {
+      position: absolute;
+      top: -16px;
+      left: -115px;
+      .title {
+        width: 100%;
+        min-width: 670px;
+        font: normal normal 600 62px/61px SF Pro Display;
+        color: var(--color-empty-illustration-text);
+      }
+      .desc {
+        margin-top: 8px;
+        font: normal normal 600 18px/21px SF Pro Display;
+        color: var(--color-empty-illustration-text);
+        max-width: 169px;
+      }
+    }
+  }
+}
+
+#e2e_design_empty_illustrations_with_button {
+  margin: 16px auto;
+  text-align: center;
+
+  .empty-design-illustration-box {
+    width: 320px;
+    height: 95px;
+    background: #eeeeee 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 16px;
+  }
+  .title {
+    color: var(--color-primary-text);
+    font: normal normal 500 16px/19px SF Pro Display;
+    text-align: center;
+  }
+  .desc {
+    font: normal normal 400 14px/16px SF Pro Display;
+    color: var(--color-primary-text);
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 4px;
+  }
+  .empty-add-btn {
+    background: var(--bg-modal) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--color-secondary);
+    border-radius: 5px;
+    margin: 32px 0px;
+    color: var(--color-primary-text);
+  }
+}
+
+#e2e_desing_empty_illus {
+  height: 450px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  .empty-wrapper {
+    margin-top: 80px;
+  }
+}
+
+#e2e_design_work_force_loader {
+  .work-force-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.something-went-wrong-e2e-design {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-body-bg);
+  .went-wrong-content-wrap {
+    max-width: 524px;
+    .sww-title {
+      font: normal normal 600 48px/57px SF Pro Display;
+      color: #046f7a;
+      text-align: center;
+    }
+    #something-went-wrong-gohome-btn {
+      font-size: 18px;
+      text-decoration: underline;
+    }
+  }
+  .went-wrong-json-wrap {
+    max-width: 370px;
+    max-height: 370px;
+  }
+}
+@media (max-width: 768px) {
+  .something-went-wrong-e2e-design {
+    flex-wrap: wrap-reverse;
+    align-items: unset;
+    padding: 10px;
+    .went-wrong-content-wrap {
+      width: 100%;
+      .sww-title {
+        font-size: 30px;
+      }
+    }
+    .went-wrong-json-wrap {
+      max-width: 270px;
+      max-height: 270px;
+    }
+  }
+}
+
+.not-found-page-wrapper-e2e-design {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#forbidden_e2e_design {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .page-not-found-wrapper .page-title {
+    font: normal normal 500 26px/32px SF Pro Display;
+    color: var(--color-primary-text);
+    max-width: 580px;
+    text-align: center;
+    a {
+      color: var(--color-secondary);
+    }
+  }
+  .go-to-home-btn {
+    border-color: #0080a5;
+    color: #0080a5;
+    text-transform: capitalize;
+    font-family: "SF Pro Display";
+  }
+}

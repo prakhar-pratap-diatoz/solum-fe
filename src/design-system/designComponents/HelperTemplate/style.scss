@@ -1,0 +1,39 @@
+#helper-template {
+  padding-top: 65px;
+  .data-unavaibility-message {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: medium;
+    color: var(--color-primary-text);
+    margin-bottom: 4px;
+  }
+  .empty-illustration {
+    width: 320px;
+    height: 95px;
+    margin-bottom: 30px;
+    background: #eeeeee 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+  }
+  .data-unavaibility-description {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-primary-text);
+    opacity: 0.5;
+    margin-bottom: 0px;
+  }
+  .helper-template-btn {
+    padding-top: 15px;
+    .MuiButton-root {
+      padding: 0;
+      width: 320px;
+      height: 48px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 2px solid #0080a5;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: medium;
+      color: #262626;
+    }
+  }
+}

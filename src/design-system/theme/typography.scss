@@ -1,0 +1,77 @@
+@mixin heading1 {
+  font-size: var(--line-height-xxlarge);
+  font-weight: var(--font-weight-600);
+  line-height: 53px;
+}
+@mixin heading4 {
+  font-size: var(--font-size-xxmedium);
+  font-weight: var(--font-weight-600);
+  line-height: var(--line-height-large);
+  font-family: var(--font-family);
+  color: var(--color-primary-text);
+}
+@mixin heading5 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-500);
+  line-height: var(--line-height-regular);
+  font-family: var(--font-family);
+  color: var(--color-primary-text);
+}
+
+@mixin heading6 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-regular);
+  font-family: var(--font-family);
+  color: var(--color-primary-text);
+}
+@mixin heading7 {
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-500);
+  line-height: var(--line-height-medium);
+  font-family: var(--font-family);
+  color: var(--color-primary-text);
+}
+@mixin heading8 {
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-medium);
+  font-family: var(--font-family);
+  color: var(--color-primary-text);
+}
+@mixin heading9 {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-100);
+  line-height: var(--line-height-medium);
+  font-family: var(--font-family);
+  color: var(--color-primary-text);
+}
+@mixin heading10 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-100);
+  font-family: var(--font-family);
+  color: var(--color-primary-text);
+  line-height: var(--line-height-xxxlarge);
+}
+
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin subtitle6 {
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-medium);
+  font-family: var(--font-family);
+  color: var(--color-secondary-text);
+}
+
+@mixin subtitle7 {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-small);
+  font-family: var(--font-family);
+  color: var(--color-secondary-text);
+}

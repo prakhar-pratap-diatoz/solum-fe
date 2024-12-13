@@ -1,0 +1,42 @@
+//phone number field
+#mobile-number-with-dial-code-container {
+    .mobile-number-with-dial-code {
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  
+    #e2e_design_textfield {
+      .MuiInputBase-root {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
+  
+    .custom-autocomplete {
+      .design-system-auto-complete {
+        .MuiInputBase-root {
+          width: 90px;
+          height: 38px;
+          padding-top: 2px;
+          border-right: 1px solid var(--color-filter-button-border-color);
+          border-radius: 0px;
+        }
+  
+        .MuiInputBase-input {
+          padding-top: 2px;
+        }
+        .MuiOutlinedInput-notchedOutline {
+          border: unset !important;
+        }
+  
+        .MuiPaper-root {
+          min-width: 300px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  

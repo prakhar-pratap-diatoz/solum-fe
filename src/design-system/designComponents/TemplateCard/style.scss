@@ -1,0 +1,48 @@
+#option-template {
+  cursor: pointer;
+  .disabled-template {
+    cursor: not-allowed;
+  }
+  .selected-option-template-card {
+    border-color: var(--color-selected) !important;
+  }
+
+  .option-template-card {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-filter-button-border-color);
+    border-radius: 10px;
+    padding: 16px;
+    .option-template-wrapper {
+      display: flex;
+      .radio-select {
+        .ant-radio-checked .ant-radio-inner {
+          border-color: #0080a5;
+        }
+        .ant-radio-inner::after {
+          background-color: #0080a5;
+        }
+      }
+      .option-template-type {
+        .title {
+          font-size: 14px;
+          line-height: 16px;
+          color: var(--color-primary-text);
+          margin-bottom: 6px;
+          margin-top: 3px;
+        }
+        .desc {
+          font-size: 12px;
+          line-height: 14px;
+          color: #999999;
+        }
+        .footer {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  .small-field {
+    padding: 12px !important;
+    border-radius: 5px !important;
+  }
+}

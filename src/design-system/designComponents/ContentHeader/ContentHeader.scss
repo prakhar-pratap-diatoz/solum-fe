@@ -1,0 +1,24 @@
+#e2e_design_content_header {
+  margin-bottom: 30px;
+  .content_header_heading {
+    align-items: center;
+    justify-content: space-around;
+    color: var(--color-primary-text);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-700);
+    font-family: var(--font-family);
+    margin-bottom: 12px;
+    display: flex;
+  }
+  .content_header_sub_heading {
+    align-items: center;
+    justify-content: space-around;
+    color: var(--color-secondary-text);
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-300);
+    font-family: var(--font-family);
+    text-align: center;
+    line-height: 19px;
+    display: flex;
+  }
+}

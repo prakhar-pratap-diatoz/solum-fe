@@ -1,0 +1,27 @@
+#full-drawer {
+  overflow: hidden;
+  .MuiPaper-root {
+    height: 100%;
+    overflow: hidden;
+  }
+  @media (min-width: 1600px) {
+    .col-xxl-2 {
+      flex: 0 0 auto;
+      max-width: 16.66666667%;
+    }
+    .col-xxl-10 {
+      flex: 0 0 auto;
+      max-width: 83.33333333%;
+    }
+  }
+}
+.full-drawer-nav-drawer {
+  z-index: 1501 !important;
+  .MuiDrawer-paper {
+    background: var(--color-bg-full-drawer-section-nav);
+    box-shadow: var(--side-navbar-shadow);
+  }
+}
+.full-drawer-mobile-main-wrap {
+  background-color: var(--navbar-bg-color);
+}

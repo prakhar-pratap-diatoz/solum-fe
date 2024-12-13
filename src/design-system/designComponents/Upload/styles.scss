@@ -1,0 +1,89 @@
+.e2e-design-upload {
+  .logo-upload-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .image-preview-container {
+    margin-top: 12px;
+    .upload-image-wrapper-light-mode {
+      width: 183px;
+      height: 183px;
+      border: 1px solid var(--color-filter-button-border-color);
+      padding: 10px;
+    }
+    .upload-image-wrapper-dark-mode {
+      width: 183px;
+      height: 183px;
+      border: 1px solid var(--color-filter-button-border-color);
+      padding: 10px;
+      background-color: #1e1f21;
+    }
+  }
+  .text-field-heading {
+    color: var(--color-primary-text);
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-400);
+    .field-required-icon {
+      color: var(--color-error);
+      margin-left: 5px;
+    }
+  }
+  .text-field-sub-heading {
+    color: var(--color-active-button-shadow);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-400);
+    margin-bottom: 10px;
+  }
+  .upload-file-wrapper {
+    margin-top: 12px;
+    max-height: 156px;
+    background-color: var(--color-textfield-background-color);
+    border: 1px dashed var(--color-filter-button-border-color);
+    border-radius: 5px;
+    .upload-helper-text-title {
+      color: var(--color-primary-text);
+      font-size: var(--font-size-regular);
+      font-weight: var(--font-weight-400);
+      span {
+        color: var(--color-secondary);
+        text-decoration: underline;
+      }
+    }
+    &:hover {
+      border: 1px dashed var(--color-cancel-button-color);
+    }
+  }
+  .support-format-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    // TODO: Needs to add label classname
+    .support-label {
+      color: var(--color-format-text);
+      font-size: var(--font-size-small);
+      font-weight: var(--font-weight-300);
+      margin-top: 10px;
+    }
+  }
+  .ant-upload-list-item-card-actions-btn {
+    svg {
+      fill: var(--color-primary-text);
+    }
+  }
+  .ant-upload-list-item {
+    left: 0px;
+    border: 1px solid var(--color-filter-button-border-color);
+    border-radius: 5px;
+    color: var(--color-format-text);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-300);
+  }
+  .ant-upload-span {
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    .ant-upload-list-item-thumbnail {
+      display: contents;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+#e2e_design_location_card {
+  border: 1px solid var(--color-primary-border);
+  border-radius: var(--border-radius-sm);
+  padding: 20px 12px;
+  .location_card_heading {
+    color: var(--color-primary-text);
+    font-size: var(--font-size-medium);
+    word-break: break-all;
+  }
+}

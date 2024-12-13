@@ -1,0 +1,18 @@
+.custom-label {
+  margin-bottom: 12px;
+  .custom-label-heading {
+    color: var(--color-primary-text);
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-400);
+    .custom-label-required {
+      color: var(--color-error);
+      margin-left: 5px;
+    }
+  }
+  .custom-label-description {
+    color: var(--color-active-button-shadow);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-400);
+    white-space: pre;
+  }
+}

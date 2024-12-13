@@ -1,0 +1,102 @@
+.custom-right-drawer {
+  .MuiDrawer-paper {
+    overflow: unset;
+  }
+  .MuiPaper-root {
+    background-color: var(--color-drawer-bg);
+  }
+  .body-wrapper {
+    height: 100%;
+    border-radius: 0px;
+    background: var(--color-bg-card) 0% 0% no-repeat padding-box;
+    box-shadow: -2px -1px 12px #0000000f;
+    .header-container {
+      min-height: 54px;
+      width: 100%;
+      color: var(--color-primary-text);
+      border-bottom: 1px solid var(--color-border-card);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .mobile-right-drawer-close-icon {
+        margin-right: 15px;
+      }
+    }
+  }
+  .content-wrapper-header {
+    height: 100%;
+    background-color: var(--color-drawer-bg);
+    overflow: auto;
+  }
+  .content-wrapper {
+    height: calc(100% - 54px);
+    background-color: var(--color-drawer-bg);
+    overflow: auto;
+  }
+  .close-icon {
+    top: 0px;
+    left: -46px;
+    padding: 16px;
+    position: absolute;
+    cursor: pointer;
+    background: var(--color-bg-card) 0% 0% no-repeat padding-box;
+    box-shadow: -3px 2px 8px #0000000f;
+    border-radius: 10px 0px 0px 10px;
+    z-index: -1;
+    height: 54px;
+
+    .outer {
+      position: relative;
+      margin: auto;
+      width: 25px;
+      cursor: pointer;
+      margin-left: -2px;
+      &:hover .inner label {
+        opacity: 1;
+      }
+      .inner {
+        width: inherit;
+        text-align: center;
+        &:before,
+        &:after {
+          position: absolute;
+          content: "";
+          height: 1.5px;
+          width: inherit;
+          background: var(--color-primary-text);
+          left: 0;
+          transition: all 0.3s ease-in;
+        }
+        &:before {
+          top: 44%;
+          transform: rotate(45deg);
+        }
+        &:after {
+          bottom: 50%;
+          transform: rotate(-45deg);
+        }
+        label {
+          font-size: 10px;
+          color: var(--color-primary-text);
+          transition: all 0.3s ease-in;
+          opacity: 0;
+          cursor: pointer;
+          margin: 4px 0px;
+        }
+      }
+    }
+
+    .outer:hover .inner {
+      &:after,
+      &:before {
+        transform: rotate(0.01deg);
+      }
+      &:after {
+        bottom: 0;
+      }
+      &:before {
+        top: 0;
+      }
+    }
+  }
+}

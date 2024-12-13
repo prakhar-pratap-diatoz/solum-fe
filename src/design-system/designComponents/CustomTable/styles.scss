@@ -1,0 +1,27 @@
+#e2e_custom_material_table {
+  ::-webkit-scrollbar {
+    width: 0px !important;
+    height: 7px !important;
+  }
+  .custom-table-wrapper {
+    .MuiPaper-root {
+      border-radius: 8px !important;
+      background-color: var(--color-bg-card);
+
+      .MuiBox-root {
+        height: 3px;
+        min-height: 0px;
+      }
+      .MuiTableContainer-root {
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        // scrollbar-width: none; /* Firefox */
+        .MuiBox-root {
+          height: auto;
+        }
+      }
+      // .MuiTableContainer-root::-webkit-scrollbar {
+      //   display: none; /* Safari and Chrome */
+      // }
+    }
+  }
+}

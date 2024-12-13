@@ -1,0 +1,76 @@
+@import "../../theme/typography.scss";
+$box-shadow: #00000033 0px 2px 1px -1px, #00000024 0px 1px 1px 0px,
+  #0000001f 0px 1px 3px 0px;
+$box-shadow-hover: 0px 2px 4px -1px #00000033, 0px 4px 5px 0px #00000024;
+
+.e2e_modal {
+  .ant-modal-content {
+    border-radius: var(--border-radius-lg);
+    background: var(--bg-modal);
+  }
+  .modal-title {
+    @include heading5;
+    margin-top: 12px;
+  }
+  .modal-desc {
+    // @include heading6;
+    // font-size: 14px;
+    // margin-top: 2px;
+    // opacity: 0.8;
+    font-size: 14px;
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-regular);
+    font-family: var(--font-family);
+    color: var(--color-primary-text);
+    margin-top: 2px;
+    opacity: 0.8;
+  }
+
+  .confirmation-modal-description-higlighter {
+    opacity: 1 !important;
+    background-color: var(--color-bg-highlight);
+    width: fit-content;
+  }
+  .action-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: 32px;
+    gap: 16px;
+  }
+}
+
+.custom-modal {
+  .custom-modal-box-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-modal);
+    border-radius: 5px;
+    max-height: calc(100% - 30px);
+    overflow-y: auto;
+    box-shadow: $box-shadow;
+    width: 700px;
+    &:hover {
+      box-shadow: $box-shadow-hover;
+    }
+    @media (max-width: 576px) {
+      width: 95%;
+    }
+    .custom-modal-header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      border-bottom: 1px solid var(--candidate-card-border);
+    }
+    .custom-modal-footer-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 15px;
+      border-top: 1px solid var(--candidate-card-border);
+    }
+  }
+}
