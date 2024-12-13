@@ -1,10 +1,14 @@
 #side_nav_container{
-    width: 90px;
+    width: 77px;
     height: calc(100vh - 30px);
     overflow: auto;
-    background-color: #eaeaea;
+    // background-color: #eaeaea;
     color: #262626;
     padding: 15px 11px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: rgba(var(--color-nav-bg), var(--color-nav-bg-opacity));
+    box-shadow: 1px 2px 1px -1px rgba(0, 0, 0, .086), 2px 1px 1px 0 rgba(0, 0, 0, .078), 2px 0 3px 0 rgba(0, 0, 0, .063);
 
     .company-icon{
         margin-bottom: 20px;

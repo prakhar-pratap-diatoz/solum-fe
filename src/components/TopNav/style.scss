@@ -1,7 +1,13 @@
 #top_nav_wrapper{
     height: 70px;
-    width: calc(100vw - 112px);
-    background-color: #eaeaea;
+    width: calc(100vw - 99px);
+    // background-color: #eaeaea;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: rgba(var(--color-nav-bg), var(--color-nav-bg-opacity));
+    box-shadow: var(--navbar-box-shadow);
+    height: 60px;
+    z-index: 1300;
     .nav-contents{
         display: flex;
         align-items: center;
