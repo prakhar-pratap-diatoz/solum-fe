@@ -1,0 +1,23 @@
+#top_nav_wrapper{
+    height: 70px;
+    width: calc(100vw - 112px);
+    background-color: #eaeaea;
+    .nav-contents{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0px 30px;
+
+        .profile{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            .name{
+                font-weight: 600;
+                font-size: 18px;
+                color: rgb(11, 11, 104);
+            }
+        }
+    }
+}

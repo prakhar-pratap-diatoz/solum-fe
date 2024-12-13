@@ -1,0 +1,35 @@
+#side_nav_container{
+    width: 90px;
+    height: calc(100vh - 30px);
+    overflow: auto;
+    background-color: #eaeaea;
+    color: #262626;
+    padding: 15px 11px;
+
+    .company-icon{
+        margin-bottom: 20px;
+        .company-image{
+            width: 77px;
+            height: 50px;
+        }
+    }
+
+    .menu-icon-card{
+        border-radius: 5px;
+        display: grid;
+        place-content: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+        width: 77px;
+        height: 70px;
+        font-size: 11px;
+        font-weight: 700;
+        &:hover{
+            background-color: hsla(0, 0%, 49%, .149);;
+        }
+
+        .menu-name,.icon{
+            text-align: center;
+        }
+    }
+}
