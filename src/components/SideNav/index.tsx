@@ -1,16 +1,19 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { AccountBalance, Person, Settings } from "@mui/icons-material";
 import "./style.scss";
 
 const SideNav = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [activeTab, setActiveTab] = useState(location.pathname);
+
   const sideMenu = [
     { menuName: "Dashboard", url: "/dashboard" },
-    { menuName: "Dashboard", url: "/dashboard" },
-    { menuName: "Licenses", url: "/licenses" },
+    { menuName: "License Requests", url: "/license-requests" },
+    { menuName: "Customers", url: "/customers" },
     { menuName: "Users", url: "/users" },
-    { menuName: "UserDashboard", url: "/user-dashboard" },
+    { menuName: "User Dashboard", url: "/user-dashboard" },
   ];
   return (
     <div id="side_nav_container">
@@ -21,8 +24,14 @@ const SideNav = () => {
           alt="company logo"
         />
       </div>
-      {sideMenu?.map(({menuName, url}: {menuName : string , url : string}) => (
-        <div className="menu-icon-card" onClick={()=> navigate(url)}>
+      {sideMenu?.map(({ menuName, url }: { menuName: string; url: string }) => (
+        <div
+          className={`menu-icon-card ${activeTab === url ? "active-card" : ""}`}
+          onClick={() => {
+            setActiveTab(url);
+            navigate(url);
+          }}
+        >
           <div className="icon">
             <AccountBalance />
           </div>

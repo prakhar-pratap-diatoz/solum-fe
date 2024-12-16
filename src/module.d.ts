@@ -9,3 +9,4 @@ declare module "react-toastify";
 declare module "@mui/styles";
 declare module "react-chartjs-2";
 declare module "chart.js";
+declare module "recharts";

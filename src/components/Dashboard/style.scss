@@ -1,0 +1,31 @@
+#admin_dashboard{
+    .dashboard-stats {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      
+        .stat-card {
+          background-color: white;
+          padding: 10px;
+          border-radius: 8px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          flex: 1;
+          text-align: center;
+      
+          h3 {
+            text-align: left;
+            font-size: 1rem;
+            margin-top: 0.3rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+          }
+      
+          p {
+            text-align: left;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0;
+          }
+        }
+      }
+}
