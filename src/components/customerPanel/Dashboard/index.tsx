@@ -12,7 +12,7 @@ import {
 } from "chart.js";
 import "./style.scss";
 import { Header } from "../../../design-system/designComponents";
-import MainContainer from "../../../components/MainContainer";
+import MainContainer from "../../MainContainer";
 
 ChartJS.register(
   ArcElement,

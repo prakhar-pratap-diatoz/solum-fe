@@ -2,7 +2,7 @@ import React from "react";
 import PrivateRoute from "./components/PrivateRoute";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
-import CustomerDashboard from "./Customer/components/Dashboard";
+import CustomerDashboard from "./components/customerPanel/Dashboard";
 import LicenseRequests from "./components/adminPanel/LicenseRequests";
 import Users from "./components/adminPanel/Users/Users";
 import Customers from "./components/adminPanel/Customers";
