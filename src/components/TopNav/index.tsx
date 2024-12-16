@@ -1,15 +1,16 @@
 import { ChangeEvent, useEffect, useState } from "react";
+import { useGlobal } from "../../Providers/GlobalProvider";
 import Buttons from "../../design-system/designComponents/Buttons/Button";
 import { Avatar } from "@mui/material";
 import Textfield from "../../design-system/designComponents/Textfield";
 import "./style.scss";
 
 const TopNav = () => {
+  const { viewType, setViewType } = useGlobal();
   const [search, setSearch] = useState("");
-  // const [viewType, setViewType] = useState("solum-view");
-  const [viewType, setViewType] = useState<string>(() => {
-    return localStorage.getItem("viewType") || "solum-view";
-  });
+  // const [viewType, setViewType] = useState<string>(() => {
+  //   return localStorage.getItem("viewType") || "solum-view";
+  // });
 
   useEffect(() => {
     localStorage.setItem("viewType", viewType);

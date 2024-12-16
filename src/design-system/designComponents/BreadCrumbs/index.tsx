@@ -33,7 +33,8 @@ const BreadCrumbs = ({
             cursor: cursor ? "pointer" : "auto",
           }}
           className={href ? styles.activeLink : styles.inActiveLink}
-          to={href ? href : "javascript:void(0)"}
+          // to={href ? href : "javascript:void(0)"}
+          to={href?.startsWith("/") ? href : `/${href}`}
           onClick={onClick ? onClick : undefined}
         >
           {name}

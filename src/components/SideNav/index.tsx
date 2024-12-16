@@ -13,7 +13,6 @@ const SideNav = () => {
     { menuName: "License Requests", url: "/license-requests" },
     { menuName: "Customers", url: "/customers" },
     { menuName: "Users", url: "/users" },
-    { menuName: "User Dashboard", url: "/user-dashboard" },
   ];
   return (
     <div id="side_nav_container">
