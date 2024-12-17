@@ -28,8 +28,10 @@
     @extend .button;
     color: var(--color-primary-button-text);
     box-shadow: var(--color--active-button-shadow);
-    background: var(--color-secondary);
-    border: 1px solid var(--color-secondary);
+    // background: var(--color-secondary);
+    background-color: #09263F;
+    border: 1px solid #09263F;
+    // border: 1px solid var(--color-secondary);
     border-radius: var(--border-radius-sm);
     &:hover {
       background-color: var(--color-secondary-dark);
@@ -136,9 +138,11 @@
   }
   .primary-outlined {
     @extend .button;
-    border: 1px solid var(--color-secondary);
+    // border: 1px solid var(--color-secondary);
+    border: 1px solid #09263f;
     border-radius: var(--border-radius-sm);
-    color: var(--color-secondary);
+    color: #09263f;
+    // color: var(--color-secondary);
     &:hover {
       border: 1px solid var(--color-secondary-dark);
       color: var(--color-secondary-dark);

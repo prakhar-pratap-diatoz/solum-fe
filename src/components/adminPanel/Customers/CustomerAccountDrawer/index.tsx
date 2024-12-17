@@ -4,7 +4,10 @@ import {
   RightDrawer,
   TextField,
   FieldLabel,
+  DateField,
 } from "../../../../design-system/designComponents";
+import { ToggleOn, ToggleOff } from "@mui/icons-material";
+import "./style.scss";
 
 interface CustomerAccountDrawerProps {
   isDrawerOpen: boolean;
@@ -14,6 +17,10 @@ interface CustomerAccountDrawerProps {
 interface DetailsProps {
   code: string;
   company: string;
+  invoiceNo: string;
+  price: string;
+  notes: string;
+  noOfLicenseKeys: string;
 }
 
 const CustomerAccountDrawer = ({
@@ -23,9 +30,14 @@ const CustomerAccountDrawer = ({
   const [customerDetails, setCustomerDetails] = useState<DetailsProps>({
     code: "",
     company: "",
+    invoiceNo: "",
+    price: "",
+    notes: "",
+    noOfLicenseKeys: "",
   });
 
-  const { code, company } = customerDetails || {};
+  const { code, company, noOfLicenseKeys, price, notes, invoiceNo } =
+    customerDetails || {};
 
   return (
     <RightDrawer
@@ -72,22 +84,38 @@ const CustomerAccountDrawer = ({
             />
           </div>
         </div>
+        <div className="row mb-3">
+          <div className="col-12">
+            <TextField
+              value={"Active"}
+              onChange={({
+                target: { value },
+              }: ChangeEvent<HTMLInputElement>) =>
+                setCustomerDetails((prev: any) => ({
+                  ...prev,
+                  code: value,
+                }))
+              }
+              endIcon={<ToggleOn sx={{ fill: "#42A715", height: "28px" }} />}
+            />
+          </div>
+        </div>
 
         <div className="mb-3">
-          <FieldLabel heading={"Licence Key Details"} />
+          <div className="section-heading-name">Licence Key Details</div>
 
-          <div className="row">
+          <div className="row mb-3">
             <div className="col-4">
               <TextField
                 required
                 heading="No. Of Licence Keys"
-                value={code}
+                value={noOfLicenseKeys}
                 onChange={({
                   target: { value },
                 }: ChangeEvent<HTMLInputElement>) =>
                   setCustomerDetails((prev: any) => ({
                     ...prev,
-                    code: value,
+                    noOfLicenseKeys: value,
                   }))
                 }
               />
@@ -96,54 +124,74 @@ const CustomerAccountDrawer = ({
               <TextField
                 required
                 heading="Price"
-                value={company}
+                value={price}
                 onChange={({
                   target: { value },
                 }: ChangeEvent<HTMLInputElement>) =>
                   setCustomerDetails((prev: any) => ({
                     ...prev,
-                    company: value,
+                    price: value,
                   }))
                 }
+              />
+            </div>
+          </div>
+
+          <div className="row mb-3">
+            <div className="col-6">
+              <DateField
+                value={"2024-12-17"}
+                heading="Start Date"
+                required
+                onChange={() => {}}
+              />
+            </div>
+
+            <div className="col-6">
+              <DateField
+                value={"2024-12-31"}
+                heading="End Date"
+                required
+                onChange={() => {}}
               />
             </div>
           </div>
         </div>
 
         <div className="mb-3">
-          <FieldLabel heading={"Invoice Details"} />
+          <div className="section-heading-name">Invoice Details</div>
 
-          <div className="row">
-            <div className="col-4">
-              <TextField
-                required
-                heading="Invoice Details"
-                value={code}
-                onChange={({
-                  target: { value },
-                }: ChangeEvent<HTMLInputElement>) =>
-                  setCustomerDetails((prev: any) => ({
-                    ...prev,
-                    code: value,
-                  }))
-                }
-              />
-            </div>
-            <div className="col-8">
-              <TextField
-                required
-                heading="Notes"
-                value={company}
-                onChange={({
-                  target: { value },
-                }: ChangeEvent<HTMLInputElement>) =>
-                  setCustomerDetails((prev: any) => ({
-                    ...prev,
-                    company: value,
-                  }))
-                }
-              />
-            </div>
+          <div className="mb-3">
+            <TextField
+              required
+              heading="Invoice Number"
+              value={invoiceNo}
+              onChange={({
+                target: { value },
+              }: ChangeEvent<HTMLInputElement>) =>
+                setCustomerDetails((prev: any) => ({
+                  ...prev,
+                  invoiceNo: value,
+                }))
+              }
+            />
+          </div>
+          <div className="mb-3">
+            <TextField
+              required
+              heading="Notes"
+              multiline
+              rows={4}
+              value={notes}
+              onChange={({
+                target: { value },
+              }: ChangeEvent<HTMLInputElement>) =>
+                setCustomerDetails((prev: any) => ({
+                  ...prev,
+                  notes: value,
+                }))
+              }
+            />
           </div>
         </div>
       </div>

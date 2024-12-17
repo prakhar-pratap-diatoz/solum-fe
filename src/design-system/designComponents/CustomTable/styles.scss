@@ -23,6 +23,11 @@
           .MuiTableHead-root{
             .MuiTableRow-root{
               .MuiTableCell-root{
+                .Mui-TableHeadCell-Content{
+                  .Mui-TableHeadCell-Content-Labels{
+                    padding-left: 0px !important;
+                  }
+                }
                 &:hover{
                   .MuiBadge-root{
                     display: none  !important;
