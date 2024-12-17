@@ -113,6 +113,7 @@ const TabularView = () => {
         data={users}
         theme={theme}
         tableHeight="calc(100vh - 220px)"
+        borderLess
       />
     </div>
   );

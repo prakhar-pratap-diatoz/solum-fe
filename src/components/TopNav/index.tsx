@@ -8,9 +8,6 @@ import "./style.scss";
 const TopNav = () => {
   const { viewType, setViewType } = useGlobal();
   const [search, setSearch] = useState("");
-  // const [viewType, setViewType] = useState<string>(() => {
-  //   return localStorage.getItem("viewType") || "solum-view";
-  // });
 
   useEffect(() => {
     localStorage.setItem("viewType", viewType);
@@ -18,7 +15,7 @@ const TopNav = () => {
 
   return (
     <div id="top_nav_wrapper">
-      <div className="nav-contents">
+      <div className="nav-contents px-4">
         <div className="search-field">
           <Textfield
             value={search}

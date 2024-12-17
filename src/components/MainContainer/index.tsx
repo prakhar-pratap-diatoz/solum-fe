@@ -9,7 +9,9 @@ const MainContainer = ({ children }: { children: ReactNode }) => {
       <SideNav />
       <div>
         <TopNav />
-        <div id="main_container_wrapper">{children}</div>
+        <div id="main_container_wrapper" className="px-4">
+          {children}
+        </div>
       </div>
     </div>
   );

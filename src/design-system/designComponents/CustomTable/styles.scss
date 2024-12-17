@@ -18,6 +18,34 @@
         .MuiBox-root {
           height: auto;
         }
+
+        .MuiTable-root{
+          .MuiTableHead-root{
+            .MuiTableRow-root{
+              .MuiTableCell-root{
+                &:hover{
+                  .MuiBadge-root{
+                    display: none  !important;
+                  }
+
+                  .Mui-TableHeadCell-Content-Actions{
+                    .MuiButtonBase-root {
+                      display: none !important;
+                    }
+    
+                    .MuiTableSortLabel-root{
+                      display: none !important;
+                    }
+    
+                 
+                    }
+                }
+             
+        
+              }
+            }
+          }
+        }
       }
       // .MuiTableContainer-root::-webkit-scrollbar {
       //   display: none; /* Safari and Chrome */

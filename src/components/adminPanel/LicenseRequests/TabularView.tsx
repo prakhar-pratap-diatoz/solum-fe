@@ -140,6 +140,7 @@ const TabularView = () => {
         data={requests}
         theme={theme}
         tableHeight="calc(100vh - 220px)"
+        borderLess
         handleRowClick={(row: any) => {
           navigate(`/license-requests/${row?.original?.id}`);
         }}

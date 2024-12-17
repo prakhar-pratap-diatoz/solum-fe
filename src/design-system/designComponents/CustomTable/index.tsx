@@ -158,7 +158,8 @@ const CustomTable = ({
           },
         },
         "&.MuiTableCell-root": {
-          background: "var(--color-bg-card) !important",
+          // background: "var(--color-bg-card) !important",
+          background: "#E0E0E0 !important",
           boxShadow: "unset",
           borderBottom: "1px solid var(--color-primary-border)",
 
@@ -183,6 +184,7 @@ const CustomTable = ({
           if (handleCellClick) handleCellClick(cell);
         },
         sx: {
+          height: "40px",
           borderRight: borderLess
             ? "unset"
             : "1px solid var(  --color-table-border)",

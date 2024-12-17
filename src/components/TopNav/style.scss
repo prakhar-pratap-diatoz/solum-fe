@@ -6,14 +6,13 @@
     backdrop-filter: blur(30px);
     background-color: rgba(var(--color-nav-bg), var(--color-nav-bg-opacity));
     box-shadow: var(--navbar-box-shadow);
-    // height: 60px;
     z-index: 1300;
     .nav-contents{
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 100%;
-        padding: 0px 30px;
+        // padding: 0px 30px;
 
         .profile{
             display: flex;
