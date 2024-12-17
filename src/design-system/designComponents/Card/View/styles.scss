@@ -1,0 +1,72 @@
+@import "../../../theme/typography.scss";
+
+#e2e_design_view_detail_card {
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  position: relative;
+  .section-heading-container {
+    border: 1px solid var(--candidate-card-border);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 15px 20px;
+    min-height: 72px;
+    background-color: var(--color-body-bg-white);
+    .heading-wrap {
+      display: flex;
+      gap: 6px;
+      justify-content: space-between;
+    }
+    .section-sub-heading-container {
+      color: var(--color-secondary-text);
+      font-size: var(--font-size-regular);
+      font-family: var(--font-family);
+      font-weight: var(--font-weight-100);
+    }
+    .section-heading {
+      @include heading5;
+    }
+  }
+  .section-field-container {
+    padding: 15px 20px 0px;
+    border: 1px solid var(--candidate-card-border);
+    border-top: none;
+    background-color: var(--color-body-bg-white);
+    border-radius: 0px 0px 8px 8px;
+  }
+
+  .navigate-buttons {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 55px;
+    z-index: 10;
+  }
+  .view-edit-icon-btn {
+    .MuiIconButton-root {
+      background-color: var(--color-body-bg-white);
+      border: 1px solid var(--candidate-card-border);
+      border-radius: var(--border-radius-xsm);
+    }
+  }
+}
+
+.e2e-design-pop-over {
+  .ant-popover-inner {
+    border-radius: 8px;
+  }
+  .ant-popover-inner-content {
+    padding: 5px;
+  }
+}
+@media (max-width: 576px) {
+  #e2e_design_view_detail_card {
+    padding-bottom: 10px;
+    .section-heading-container {
+      padding: 10px !important;
+    }
+    .section-field-container {
+      padding: 10px 10px 0 !important;
+    }
+  }
+}

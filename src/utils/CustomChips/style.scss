@@ -1,0 +1,19 @@
+#custom-chips{
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background-color: #e6f3f3;
+    color: #3aa2a0;
+    width: fit-content;
+    .icon{
+        .MuiSvgIcon-root{
+            width: 13px;
+            height: 13px;
+            font-weight: 700;
+        }
+    }
+}

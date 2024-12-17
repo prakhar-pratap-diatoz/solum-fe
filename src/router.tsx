@@ -7,6 +7,7 @@ import LicenseRequests from "./components/adminPanel/LicenseRequests";
 import Users from "./components/adminPanel/Users/Users";
 import Customers from "./components/adminPanel/Customers";
 import ViewLicenseRequest from "./components/adminPanel/LicenseRequests/ViewRequest";
+import ViewCustomerDetails from "./components/adminPanel/Customers/ViewCustomerDetails";
 import { useGlobal } from "./Providers/GlobalProvider";
 
 const Router = () => {
@@ -46,6 +47,10 @@ const Router = () => {
           <Route
             path="/customers"
             element={<PrivateRoute component={<Customers />} />}
+          />
+          <Route
+            path="/customers/:id"
+            element={<PrivateRoute component={<ViewCustomerDetails />} />}
           />
         </Routes>
       </BrowserRouter>

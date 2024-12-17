@@ -1,0 +1,75 @@
+#customer_card{
+    height: 130px;
+    background-color: var(--color-bg-card);
+    border-radius: var(--border-radius-base);
+    box-shadow: var(--box-shadow-1);
+    cursor: pointer;
+    color: var(--color-primary-text);
+    &:hover {
+      box-shadow: var(--box-shadow-3);
+    }
+
+    .chip-container{
+        padding: 16px 16px 0px 16px;
+    }
+
+    .customer-profile{
+        padding: 0px 16px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+
+        .logo {
+           img{
+            width: 45px;
+            height: 45px;
+            border-radius: 5px;
+           }
+        }
+
+        .customer-details{
+            .customer-name{
+                font-size: 14px;
+                font-weight: 600;
+                margin-top: 5px;
+            }
+        }
+
+        
+    }
+
+    .horizontal-border{
+        width: 100%;
+        border-top: 1px solid #969696;
+        margin-top: 10px;
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 16px;
+        .badge{
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            color: #09263F;
+            font-size: 12px;
+            font-weight: 300;
+            .MuiSvgIcon-root{
+                color: #09263F;
+                height: 18px;
+                width: 18px;
+            }
+        }
+
+        .count{
+            font-size: 14px;
+            font-weight: 600;
+            .license-count{
+                font-size: 12px;
+            }
+        }
+    }
+}
